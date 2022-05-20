@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 7</title>
+		<link rel="stylesheet" type="text/css" href="Q7.css">
+</head>
+<body>
+<form method="POST" action="successful.html">
+	<fieldset>
+		<legend>Your Address</legend>
+		First Name:<input type="text" name="fname" required><br><br>
+		Last Name:<input type="text" name="lname" required><br><br>
+		Street:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="street"><br><br>
+		City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city" required><br><br>
+	 </fieldset>
+	 <fieldset>
+	 	<legend>Additional Details</legend>
+	 	Biography:<textarea type="text"></textarea><br><br>
+	 	Image:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="file" id="img" name="img" accept="image/*"><br><br>
+	 	Add Group:
+	 	<select>
+	 		<option>0 to 9 Years</option>
+	 		<option>10 to 19 Years</option>
+	 		<option>20 to 29 Years</option>
+	 		<option>30 to 39 Years</option>
+	 		<option>40 to 49 Years</option>	
+	 	</select>
+
+	 </fieldset>
+	 <fieldset>
+	 	<legend>Intrest</legend>
+	 	Hobbies:
+	 	<select style="margin-left: 160px" multiple>
+      		<option>Playing soccer</option>
+      		<option>Dancing</option>
+     		<option>Gardening</option>
+      		<option>Watching Movies</option>
+      		<option>Cricket</option>
+ 	   </select><br><br>
+
+	 	Favourite car?<select style="margin-left: 130px">
+	 		<option>Volvo</option>
+	 		<option>BMW</option>
+	 		<option>Hundai</option>
+	 		<option>porche</option>
+	 	</select><br><br>
+	 	Favourite Public Transport?
+	 	<span>
+	 	<ul>
+			<li>Ground</li>
+ 			<ul>
+    			<li>Train</li>
+    			<li>Bus</li>
+  			</ul>
+ 			<li>Water</li>
+		</ul>
+		</span>
+</fieldset>
+	 <br>
+
+	 <div class="button">
+	 <span class="submit">
+	 <input type="submit" name="Submit">
+	 </span>
+
+	 <span class="reset">
+	 	<input type="reset" name="Reset">
+	 </span>
+
+	 </div>	
+</form>
+</body>
+</html>

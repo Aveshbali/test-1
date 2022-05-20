@@ -1,0 +1,46 @@
+.Contact
+{
+	padding: 80px;
+}
+.Contact img
+{
+	height:100px;
+	width:500px;
+}
+.Contact form
+{
+	padding: 20px;
+}
+.Contact input
+{
+	height:35px;
+	width: 350px;
+}
+
+.Contact .button
+{
+	border-radius: 35px;
+	text-align: center;
+	height: 35px;
+	width:120px;
+	background-color: white;
+	border-color: black;
+
+}
+.Contact .button:hover
+{
+	background-color: violet;
+	border-color: violet;
+	color: white;
+}
+.Contact .icon
+{
+	position: absolute;
+	padding: 10px;
+}
+
+div
+{
+	height: 450px;
+	width: 550px;
+}

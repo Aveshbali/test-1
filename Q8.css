@@ -1,0 +1,58 @@
+.Info
+{
+	height: 650px;
+	width:550px;
+	background-color: rgb(211,211,211);
+	border:solid;
+}
+table
+{
+	padding: 5px;
+}
+td
+{
+	padding: 5px;
+}
+
+p{
+	text-align: left;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+th
+{
+	text-align: left;
+	padding: 2px;
+}
+
+.button1
+{
+	margin-left: 50px;
+	margin-top: 40px;
+	border-radius: 20px;
+	height: 40px;
+	width: 80px;
+}
+.button1:hover
+{
+	background-color: green;
+	border-color: green;
+	color: white;
+}
+
+.button2
+{
+	margin-top: 40px;
+	border-radius: 20px;
+	margin-left: 50px;
+	height: 40px;
+	width: 80px;
+}
+.button2:hover
+{
+	background-color: red;
+	border-color: red;
+	color: white;
+}

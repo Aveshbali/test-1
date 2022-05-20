@@ -1,0 +1,24 @@
+/*Question-1*/
+
+img
+{
+	height:315px;
+	width:215px;
+	padding: 3px;
+}
+
+body
+{
+	background-color: black;
+	color: white;
+}
+
+p
+{
+	text-align: center;
+}
+
+h1
+{
+	text-align: center;
+}
