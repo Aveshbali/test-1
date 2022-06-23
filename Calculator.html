@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+        .calc{
+                border: 2px solid black;
+                width: 300px;
+                margin-top: 8%;
+                background-color:darkolivegreen;
+                border-radius: 10px;
+            }
+        input
+        {
+            height: 50px;
+            width:285px;
+            margin-top: 10px;
+            border:2px solid black;
+            background-color: white;
+            text-align: right;
+            font-size: 18px;
+        }
+        button
+        {
+            height: 50px;
+            width: 70px;
+            font-size: 18px;
+            background-color: darkkhaki;
+            color: white;
+        }
+        #equals
+        {
+            height:210px; 
+            margin-top: 2%; 
+        }
+        body
+        {
+            background-color:rgb(188, 175, 147);
+        }
+
+    </style>
+    <script>
+        function display(val)
+        { 
+            document.getElementById('text').value += val;
+            return val;
+        }
+        function solve()
+        {
+            let x = document.getElementById('text').value;
+            let y = eval(x);
+            document.getElementById('text').value = y;
+            return y;
+        }
+    </script>
+    <body>
+        <center>
+            <h2 style="margin-top:2%">Calculator</h2>
+            <div class="calc">
+            <table>
+                <tr>
+                    <input type="text" id="text" name="text">
+                </tr>
+                <tr>
+                    <td><button type="button" id="plus" name ="plus" onclick="display('+')">+</button></td>
+                    <td><button type="button" id="minus" name ="minus" onclick="display('-')" >-</button></td>
+                    <td><button type="button" id="multiplicaion" name ="multiplicaion" onclick="display('*')" >*</button></td> 
+                    <td><button type="button" id="division" name ="division"  onclick="display('/')">/</button></td>
+                    
+                </tr>
+                <tr id="ra3">
+                    <td><button type="button" id="seven" name ="seven" onclick="display('7')">7</button></td>
+                    <td><button type="button" id="eight" name ="eight" onclick="display('8')">8</button></td>
+                    <td><button type="button" id="nine" name ="nine" onclick="display('9')">9</button></td> 
+                    <td  rowspan="4"><button type="button" name="equals" id="equals" onclick="solve()">=</button></td>   
+                </tr>
+                <tr id="ra3">
+                    <td><button type="button" id="four" name ="four" onclick="display('4')" >4</button></td>
+                    <td><button type="button" id="five" name ="five" onclick="display('5')">5</button></td>
+                    <td><button type="button" id="six" name ="six" onclick="display('6')">6</button></td>
+                </tr>
+                <tr id="ra3">
+                    <td><button type="button" id="one" name ="one" onclick="display('1')">1</button></td>
+                    <td><button type="button" id="two" name ="two" onclick="display('2')">2</button></td>
+                    <td><button type="button" id="three" name ="three" onclick="display('3')">3</button></td>
+                </tr>
+                <tr id="ra3">
+                    <td><button type="button" id="zero" name ="zero" onclick="display('0')" >0</button></td>
+                    <td><button type="button" id="dot" name ="dot" onclick="display('.')">.</button></td>
+                    <td><button type="button" id="clear" name ="clear" onclick="clear1()">C</button></td>
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+            </div>
+        </center>
+        <script>
+            function clear1()
+                {
+                    document.getElementById("text").value="";
+                }
+        </script>
+    </body>
+</html>
